@@ -1,0 +1,7 @@
+Because of differences in data format, the knowledge test data set was split in two: Knowledge_test_types.csv and Knowledge_test_species.csv. 
+In both files, the Reference column gives the correct answer. 
+Observers were given the questions in random order, meaning those who did not finish the test within the two-hour time limit (NA values) have answered different questions. 
+For the species, common names in norwegian were accepted, but are given in latin here for clarity. Partial names (genus but not species) were not accepted unless specifically asked for. 
+Small letter 'x' denotes questions where the observer answered blank.
+
+For more detailed description of the data and methods, please see the published paper, here: https://dx.doi.org/10.1127/phyto/2018/0293; or the Master thesis of Eva Lieungh for more detail, here: https://www.duo.uio.no/handle/10852/58245.
