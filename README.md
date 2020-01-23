@@ -9,3 +9,5 @@ Use the data freely according to the license but cite this repository *and* the 
 Authors/owners of the data in this repository: 
 Eva Lieungh, Heidrun A. Ullerud, Rune Halvorsen, Sigrun Aune, Harald Bratli, Peter Horvath, Inger K. Volden,
 Anders K. Wollan, Johnny Hofsten, Espen S. Værland & Anders Bryn.
+
+If you notice an error or have questions about the data, please open an issue in this repository.
