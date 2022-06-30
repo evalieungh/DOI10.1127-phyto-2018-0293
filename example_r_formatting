@@ -1,0 +1,20 @@
+########################
+#    Example R code    #
+########################
+
+hvaler <- read.csv('DOI10.1127-phyto-2018-0293/Data/Collective_fieldwork_data.csv')
+head(hvaler)
+unique(hvaler$Site) # points were distributed in six locations (=sites 1-6) chosen to be similar
+unique(hvaler$Point) # points 1-120, 20 in each site
+unique(hvaler$ReferenceMT) # the reference (=consensus) Major Type (MT) agreed upon by all observers after discussion
+unique(hvaler$ReferenceMU) # the reference (=consensus) Mappint unit within the reference MT.
+# the remaining columns describe the chosen MT and MUs each observer (A-K) recorded individually (before discussing the same point as a group to make the reference)
+
+# make new column with unique point ID by combining site and points numbered 1-20
+hvaler$PointID <- paste(hvaler$Site, c(rep(1:20,6)), sep = '_')
+
+# make a new column that combines MT and MU into the specific type, e.g. MT=T4 (Forest) and MU=C1 (Bilberry forest; low drought risk and low lime-richness) for the same point gives type T4-C1 Bilberry forest 
+hvaler$Type <- paste(hvaler$ReferenceMT, hvaler$ReferenceMU, sep = '-')
+
+# reorder columns
+hvaler <- hvaler[,c(1,2,27,28,3:26)]
